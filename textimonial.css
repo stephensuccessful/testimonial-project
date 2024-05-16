@@ -1,0 +1,82 @@
+body {
+    background-color: antiquewhite;
+    padding: 2%;
+    font-size: small;
+}
+
+.container {
+    display: grid;
+    column-gap: 25px;
+    row-gap: 25px;
+}
+
+.daniel {
+    grid-area: 1/1/2/3;
+    background-color: rgb(15, 109, 216);
+    color: #ffff;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.jonathan {
+    grid-area: 1/3/2/3;
+    background-color: gray;
+    color: #ffff;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.kira {
+    grid-area: 1/4/4/4;
+    background-color: #f2f2f2f2;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.Jeanette {
+    grid-area: 2/1/4/1;
+    margin-top: 0;
+    background-color: #f2f2f2f2;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.patrick {
+    grid-column: span 2;
+    grid-row: span 2;
+    background-color: rgb(19, 19, 19);
+    color: #ffff;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+img {
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+}
+
+.name {
+    display: inline-block;
+    margin-left: 20px;
+    position: absolute;
+}
+
+.summary {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.context {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: azurre;
+}
+
+@media (max-width: 920px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
